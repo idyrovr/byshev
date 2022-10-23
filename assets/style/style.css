@@ -77,6 +77,9 @@ body {
 .header {
   background: #FFFFFF;
   position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
 }
 .header__link {
   font-family: "../fonts/Roboto", sans-serif;
@@ -92,8 +95,36 @@ body {
 }
 
 .future {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100vh;
   padding-top: 120px;
-  background-image: url("../images/earth.jpg");
+  position: relative;
+  background: url("../images/earth.jpg") no-repeat center/cover;
+  clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 100% 100%, 50% 93%, 0 100%, 0% 70%, 0% 35%, 0 0);
+}
+.future .container {
+  position: relative;
+}
+.future::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: radial-gradient(34.04% 34.24% at 47.12% 72.71%, rgba(0, 27, 52, 0.3569) 0%, rgba(7, 21, 36, 0.83) 67.56%);
+}
+.future::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  background: rgba(19, 107, 171, 0.4);
+  clip-path: polygon(50% 88%, 0% 100%, 100% 100%);
 }
 .future__left {
   position: relative;
@@ -155,6 +186,13 @@ body {
 .future__period .deadline:not(:last-child) {
   margin-right: 45px;
 }
+.future__dot {
+  align-items: center;
+  margin-right: 10px;
+}
+.future__dot svg {
+  margin-right: 5px;
+}
 .future__watch {
   margin-right: 33px;
   font-weight: 600;
@@ -180,6 +218,439 @@ body {
   top: 528px;
   background: #FACF39;
   border-radius: 4px;
+}
+.future__bottom {
+  margin-top: 100px;
+}
+.future__hands {
+  position: absolute;
+  top: 160px;
+  right: -137px;
+}
+.future__hands img {
+  width: 100%;
+  height: 100%;
+}
+
+.fundraising {
+  position: relative;
+  text-align: center;
+}
+.fundraising__desc {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 137.02%;
+  color: #153149;
+}
+.fundraising__status {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 137.02%;
+  color: #137DC5;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
+}
+.fundraising__live {
+  width: 530px;
+  height: 15px;
+  background-color: #137DC5;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 33px;
+  position: relative;
+}
+.fundraising__live::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  height: 83%;
+  width: 10%;
+  background-color: #153149;
+  border-radius: 10px;
+}
+.fundraising__raised {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 137.02%;
+  color: #61676C;
+  margin-top: 20px;
+}
+
+.now {
+  margin-top: 135px;
+  text-align: center;
+}
+.now .container {
+  max-width: 1324px;
+}
+.now__title {
+  font-family: "../fonts/Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 137.02%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #373737;
+  margin-bottom: 33px;
+}
+.now__byshev {
+  color: #137DC5;
+}
+.now__image {
+  width: 367px;
+  height: 249px;
+}
+.now__image img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+.now__left {
+  margin-right: 10px;
+}
+.now__left .now__image {
+  width: 539px;
+  height: 513px;
+}
+.now__left .now__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.now__right {
+  gap: 7px;
+  row-gap: 10px;
+}
+
+.goals__title {
+  font-family: "../fonts/Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 137.02%;
+  text-transform: uppercase;
+  color: #137DC5;
+  margin: 114px 0 76px;
+  text-align: center;
+}
+.goals__steps {
+  margin-left: 102px;
+}
+.goals__steps .step__number {
+  position: relative;
+  font-family: "../Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 134px;
+  line-height: 137.02%;
+  color: #FACF39;
+  margin-right: 35px;
+}
+.goals__steps .step__number::after {
+  content: "";
+  width: 919px;
+  height: 18px;
+  position: absolute;
+  background: linear-gradient(to right, #FACF39, #FFF);
+  top: 120px;
+  right: -891px;
+}
+.goals__steps .step__desc {
+  font-family: "../fonts/Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 137.02%;
+  color: #153149;
+}
+.goals__steps .step__two {
+  margin-left: 90px;
+}
+.goals__steps .step__two .step__desc {
+  align-self: flex-start;
+}
+.goals__steps .step__two .step__number {
+  color: #137DC5;
+}
+.goals__steps .step__two .step__number::after {
+  background: linear-gradient(to right, #137DC5, #FFF);
+  width: 788px;
+  right: -776px;
+  top: 120px;
+}
+.goals__steps .step__three .step__number::after {
+  top: 122px;
+  right: -889px;
+}
+.goals__steps .step__four {
+  margin-left: 90px;
+}
+.goals__steps .step__four .step__number {
+  color: #137DC5;
+}
+.goals__steps .step__four .step__number::after {
+  display: none;
+}
+
+.concept__sm-title {
+  font-family: "../fonts/Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 137.02%;
+  color: #153149;
+  margin: 25px 0 30px;
+}
+.concept__cards {
+  gap: 30px;
+  row-gap: 30px;
+}
+.concept__title {
+  font-family: "../fonts/Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #137DC5;
+  margin: 80px 0 0;
+  text-align: center;
+}
+.concept__image img {
+  width: 100%;
+}
+.concept .card {
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+.concept .card__title {
+  text-align: center;
+  height: 48px;
+  align-self: center;
+}
+.concept .card__desc {
+  font-family: "../fonts/Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 137.02%;
+  color: #153149;
+}
+.concept__div {
+  width: 556px;
+  height: 464px;
+  margin: 30px auto 102px;
+}
+
+.people {
+  position: relative;
+  background: rgba(45, 85, 115, 0.8);
+}
+.people__title {
+  font-family: "../fonts/Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 137.02%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 20px 0 23px;
+  position: relative;
+}
+.people__desc {
+  font-family: "../fonts/Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 137.02%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 23px;
+  position: relative;
+  max-width: 493px;
+}
+.people__link {
+  position: relative;
+  font-family: "../fonts/Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 137.02%;
+  color: #56CCF2;
+}
+.people__donors {
+  padding: 101px 0;
+  position: relative;
+  background: url("../images/donors.jpg") no-repeat center/cover;
+}
+.people__donors::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(45, 85, 115, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.people__donors .partners__svg svg {
+  position: relative;
+}
+.people__partners {
+  padding: 101px 0;
+  position: relative;
+  background-image: url("../images/partners.jpg");
+}
+.people__partners::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(45, 85, 115, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.people__partners .partners__svg svg {
+  position: relative;
+}
+
+.demo {
+  margin-top: 23px;
+  position: relative;
+  background-image: url("../images/bigMap.png");
+  height: 657px;
+  width: 100%;
+}
+.demo::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  background: rgba(14, 1, 1, 0.8);
+}
+.demo__ukr {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 763px;
+}
+.demo__loc {
+  position: absolute;
+  top: 72px;
+  left: 336px;
+}
+.demo__byshev {
+  font-family: "../fonts/Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 131.02%;
+  color: #FFFFFF;
+  margin-bottom: 7px;
+}
+.demo .container {
+  padding-top: 67px;
+}
+.demo__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 137.02%;
+  letter-spacing: 0.13em;
+  color: #FFFFFF;
+  position: relative;
+}
+
+.project {
+  margin-top: 43px;
+  background-image: url("../images/My_test.jpg");
+  height: 659px;
+  padding: 27px 132px;
+}
+.project__title {
+  position: relative;
+  font-family: "../fonts/Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 111.02%;
+  text-transform: uppercase;
+  color: #153149;
+}
+.project__title::before {
+  content: "";
+  position: absolute;
+  width: 107px;
+  height: 5px;
+  top: 20px;
+  left: -100px;
+  background: #153149;
+}
+
+.footer {
+  margin-top: 43px;
+  padding-top: 66px;
+  background: #EDEEEF;
+}
+.footer__left {
+  position: relative;
+}
+.footer__left::after {
+  position: absolute;
+  content: "";
+  width: 294px;
+  height: 2px;
+  background: #FFFFFF;
+  top: 110px;
+  right: -146px;
+  transform: rotate(-90deg);
+}
+.footer__title {
+  width: 321px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 131.02%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #004988;
+  margin-bottom: 34px;
+}
+.footer__phone {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 131.02%;
+  text-decoration-line: underline;
+  color: #137DC5;
+  margin-top: 33px;
+}
+.footer__col:not(:last-child) {
+  margin-right: 34px;
+}
+.footer__donate {
+  width: 234px;
+  height: 51px;
+  left: 887px;
+  top: 5823px;
+  background: #FACF39;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 137.02%;
+  text-transform: uppercase;
+  color: #153149;
+}
+.footer__line {
+  width: 100%;
+  height: 2px;
+  background: #FFFFFF;
+  margin-top: 52px;
+}
+.footer__bottom {
+  text-align: center;
+  padding: 41px 0 38px;
 }
 
 /*# sourceMappingURL=style.css.map */
