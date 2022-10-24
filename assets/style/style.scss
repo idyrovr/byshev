@@ -407,6 +407,7 @@ body {
             width: 788px;
             right: -776px;
             top: 120px;
+            height: 18px;
           }
         }
         }
@@ -617,10 +618,13 @@ body {
 }
 
 .project {
+  overflow-x: hidden;
   margin-top: 43px;
   background-image: url("../images/My_test.jpg");
   height: 659px;
   padding: 27px 132px;
+
+
   &__title {
     position: relative;
     font-family: '../fonts/Montserrat', sans-serif;
@@ -631,6 +635,7 @@ body {
     text-transform: uppercase;
     color: #153149;
     width: 429px;
+
     &::before {
       content: "";
       position: absolute;
@@ -641,12 +646,35 @@ body {
       background: #153149;
     }
   }
+  & .grid__col-3 {
+    grid-template-columns: 2fr 1fr 1fr !important;
+  }
   &__parts {
     margin-top: 87px;
-    & .grid__col-3 {
-      grid-template-columns: 2fr 1fr 1fr;
-    }
+    width: 100%;
   }
+
+  .press {
+    width: 99%;;
+    height: 38px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 137.02%;
+    color: #565656;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 8px 0;
+  }
+
+  .press_blue {
+    width: 73%;
+    background: #719DC1;
+    box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+  }
+
   &__sm-title {
     width: 277px;
     height: 61px;
@@ -660,64 +688,100 @@ body {
     padding: 12px 0;
     margin-right: 40px;
   }
+
   &__funding {
     & .project__sm-title {
       width: 522px;
       margin-right: 69px;
     }
   }
+
   &__management {
     .project__sm-title {
       margin-bottom: 28px;
     }
-    .press_blue-management{
-      width: 262px;
+
+    .press_blue-management {
       background: #719DC1 !important;
       box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.2);
       color: #FFFFFF !important;
+
+
     }
+
     .press {
+      width: 82% !important;
       margin-left: 7px;
       margin-bottom: 25px !important;
     }
   }
+
   &__execution {
     .project__sm-title {
       margin-bottom: 96px;
     }
+
     .press_execution {
+      width: 81%;
       height: 70px !important;
+      margin-left: 8px !important;
+      margin-right: 0 !important;
     }
   }
+
   .funding {
     gap: 61px;
+
     &__left {
       margin-top: 28px;
+      position: relative;
+
+      & .svg1 {
+        position: absolute;
+        top: 0;
+        left: -53px;
+      }
+
+      & .svg2 {
+        position: absolute;
+        top: 16px;
+        right: -42px;
+      }
+
+      & .svg3 {
+        position: absolute;
+        top: 16px;
+        right: -60px;
+      }
+
     }
+
     &__right {
+      position: relative;
       margin-top: 40px;
+
+      & .svg4 {
+        position: absolute;
+        top: 8px;
+        right: -2px;
+      }
+
+      & .svg5 {
+        position: absolute;
+        top: 69px;
+        right: -2px;
+      }
+
+      & .svg6 {
+        position: absolute;
+        top: 81px;
+        right: -324px;
+      }
     }
   }
-  .press {
-    width: 262px;
-    height: 38px;
-    background: #FFFFFF;
-    border-radius: 3px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 137.02%;
-    color: #565656;
-    text-align: center;
-    margin-bottom: 15px;
-    padding: 8px 0;
-  }
-  .press_blue{
-    width: 183px;
-    background: #719DC1;
-    box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.2);
-    color: #FFFFFF;
-  }
+
 }
+
 
 .footer {
   margin-top: 43px;
@@ -783,14 +847,5 @@ body {
   }
 }
 
-.image-slider {
-  padding: 30px 0 70px 0;
-}
 
-.image-slider__image {
-  text-align: center;
-}
 
-.image-slider__image img {
-  max-width: 100%;
-}

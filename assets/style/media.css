@@ -33,6 +33,12 @@
     height: 115vh;
   }
 }
+@media (max-width: 2200px) {
+  .future__hands {
+    top: 200px;
+    right: -456px;
+  }
+}
 @media (max-width: 1980px) {
   .future__hands {
     top: 183px;
@@ -43,6 +49,12 @@
   .future__hands {
     top: 183px;
     right: -301px;
+  }
+  .goals__steps .step__number::after {
+    top: 121px;
+  }
+  .goals__steps .step__two .step__number::after {
+    top: 121px;
   }
 }
 @media (max-width: 1600px) {
@@ -68,6 +80,9 @@
     position: absolute;
     top: 172px;
     right: -90px;
+  }
+  .project .container {
+    max-width: 800px;
   }
 }
 @media (max-width: 1200px) {
@@ -169,6 +184,7 @@
     flex-direction: column;
   }
   .future__left {
+    margin: 0 auto;
     justify-content: center;
   }
   .future__left::after {
@@ -177,7 +193,7 @@
     left: 0;
     margin: 0 auto;
     transform: rotate(0deg);
-    width: 564px;
+    width: 100%;
   }
   .future__right {
     text-align: center;
@@ -193,6 +209,16 @@
   .future__title {
     text-align: center;
     width: 564px;
+  }
+  .future__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .future__btn {
+    margin: 0 auto 8px;
+  }
+  .future__watch {
+    width: 234px;
   }
   .goals__steps .step__number::after {
     width: 500px;
@@ -210,18 +236,6 @@
   }
   .footer__phone {
     font-size: 16px;
-  }
-}
-@media (max-width: 850px) {
-  .future__buttons {
-    display: flex;
-    flex-direction: column;
-  }
-  .future__btn {
-    margin: 0 auto 8px;
-  }
-  .future__watch {
-    width: 234px;
   }
 }
 @media (max-width: 800px) {
@@ -245,6 +259,9 @@
   }
   .footer__right {
     margin-top: 95px;
+  }
+  .goals__steps .step__two .step__number::after {
+    top: 121px;
   }
 }
 @media (max-width: 750px) {
@@ -277,6 +294,184 @@
   }
   .future::after {
     clip-path: polygon(50% 90%, 0% 100%, 100% 100%);
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    position: relative;
+  }
+  .header::before {
+    position: absolute;
+    content: "";
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    top: 86px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 96%;
+  }
+  .header .container {
+    flex-direction: column;
+  }
+  .header__logo {
+    padding: 25px 0;
+  }
+  .header__nav {
+    padding: 5px 0 15px;
+  }
+  .header__link {
+    position: relative;
+  }
+  .header__link:not(:last-child)::after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transform: rotate(-90deg);
+    top: 8px;
+    right: -43px;
+    width: 25px;
+  }
+  .future__hands {
+    right: -59px;
+  }
+  .goals__steps .step__number::after {
+    top: 120px;
+  }
+  .goals__steps .step__two .step__number::after {
+    top: 120px;
+  }
+  .goals__steps .step__number {
+    margin-right: 3px;
+  }
+  .goals__steps {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 650px) {
+  .demo {
+    padding: 0 10px;
+  }
+  .future {
+    height: 117vh;
+  }
+  .future__hands {
+    top: 665px;
+    right: -46px;
+  }
+  .goals__steps .step__number::after {
+    width: 400px;
+    right: -368px;
+  }
+  .goals__steps .step__two .step__number::after {
+    width: 400px;
+    right: -368px;
+  }
+  .goals__steps .step__three .step__number::after {
+    right: -368px;
+  }
+  .goals__steps .step__desc {
+    font-size: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .future {
+    height: 125vh;
+  }
+  .future__hands {
+    top: 711px;
+    right: -36px;
+  }
+  .goals__steps .step__desc {
+    font-size: 17px;
+  }
+  .goals__steps .step__number {
+    margin-right: 11px;
+  }
+  .demo__title {
+    margin-bottom: 20px;
+  }
+  .demo__loc {
+    top: 52px;
+    left: 246px;
+  }
+}
+@media (max-width: 550px) {
+  .header__link:first-child {
+    display: none;
+  }
+  .future {
+    height: 125vh;
+    padding: 0 20px;
+  }
+  .future__left {
+    height: 179px;
+  }
+  .future__desc {
+    font-size: 14px;
+  }
+  .future__title {
+    font-size: 29px;
+    width: 414px;
+    margin-top: 75px;
+  }
+  .future__hands {
+    top: 796px;
+    right: -58px;
+  }
+  .fundraising__live {
+    width: 415px;
+  }
+  .goals__steps .step__number::after {
+    width: 300px;
+    right: -268px;
+  }
+  .goals__steps .step__two .step__number::after {
+    width: 300px;
+    right: -268px;
+  }
+  .goals__steps .step__three .step__number::after {
+    right: -268px;
+  }
+  .goals__steps .step__desc {
+    font-size: 16px;
+  }
+  .demo__loc {
+    top: 48px;
+    left: 219px;
+  }
+}
+@media (max-width: 500px) {
+  .demo {
+    text-align: center;
+  }
+  .demo__loc {
+    top: 44px;
+    left: 198px;
+  }
+  .goals__steps .step__desc {
+    line-height: 100.02%;
+    font-size: 16px;
+  }
+  .goals__steps .step__number {
+    font-size: 103px;
+  }
+  .goals__steps .step__number::after {
+    top: 92px !important;
+    height: 14px !important;
+  }
+  .goals__steps .step__three .step__number::after {
+    height: 13px;
+    right: -281px;
+  }
+  .step {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .demo__loc {
+    top: 37px;
+    left: 166px;
   }
 }
 
