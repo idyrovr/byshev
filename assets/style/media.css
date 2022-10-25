@@ -38,6 +38,9 @@
     top: 200px;
     right: -456px;
   }
+  .project .funding__right .svg6 {
+    right: -131%;
+  }
 }
 @media (max-width: 1980px) {
   .future__hands {
@@ -51,10 +54,10 @@
     right: -301px;
   }
   .goals__steps .step__number::after {
-    top: 121px;
+    top: 120px;
   }
   .goals__steps .step__two .step__number::after {
-    top: 121px;
+    top: 120px;
   }
 }
 @media (max-width: 1600px) {
@@ -74,6 +77,19 @@
     top: 177px;
     right: -120px;
   }
+  .project .funding__right .svg6 {
+    right: -131%;
+  }
+}
+@media (max-width: 1380px) {
+  .project .funding__right .svg6 {
+    right: -135%;
+  }
+}
+@media (max-width: 1334px) {
+  .project .box .sm-box__title {
+    padding: 12px 22px;
+  }
 }
 @media (max-width: 1300px) {
   .future__hands {
@@ -81,8 +97,23 @@
     top: 172px;
     right: -90px;
   }
-  .project .container {
-    max-width: 800px;
+  .project__sm-title {
+    font-size: 22px;
+  }
+  .project .press {
+    font-size: 14px;
+  }
+  .project .box {
+    bottom: -520%;
+  }
+  .project .box .sm-box__desc {
+    font-size: 14px;
+  }
+  .project .box .sm-box__title {
+    font-size: 14px;
+  }
+  .project .funding__right .svg6 {
+    right: -140%;
   }
 }
 @media (max-width: 1200px) {
@@ -101,6 +132,18 @@
   .now__right .now__image {
     width: 214px;
     height: 144px;
+  }
+  .project .funding__right .svg6 {
+    right: -145%;
+  }
+  .project .funding__right .svg5 {
+    right: -18%;
+  }
+  .project .funding__right .svg4 {
+    right: -18%;
+  }
+  .project__sm-title {
+    width: 102%;
   }
 }
 @media (max-width: 1150px) {
@@ -261,7 +304,7 @@
     margin-top: 95px;
   }
   .goals__steps .step__two .step__number::after {
-    top: 121px;
+    top: 120px;
   }
 }
 @media (max-width: 750px) {
@@ -334,6 +377,12 @@
   }
   .future__hands {
     right: -59px;
+  }
+  .now__images {
+    display: none;
+  }
+  .now .swiper {
+    display: block;
   }
   .goals__steps .step__number::after {
     top: 120px;

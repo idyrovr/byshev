@@ -324,6 +324,19 @@ body {
   gap: 7px;
   row-gap: 10px;
 }
+.now .swiper {
+  display: none;
+}
+.now__slide {
+  width: 100%;
+  height: calc(100vw - 50%);
+}
+.now__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
 .goals__title {
   font-family: "../fonts/Montserrat", sans-serif;
@@ -572,7 +585,7 @@ body {
   overflow-x: hidden;
   margin-top: 43px;
   background-image: url("../images/My_test.jpg");
-  height: 659px;
+  height: 721px;
   padding: 27px 132px;
 }
 .project__title {
@@ -584,7 +597,7 @@ body {
   line-height: 111.02%;
   text-transform: uppercase;
   color: #153149;
-  width: 429px;
+  max-width: 429px;
 }
 .project__title::before {
   content: "";
@@ -601,8 +614,56 @@ body {
 .project__parts {
   margin-top: 87px;
   width: 100%;
+  gap: 20px;
+}
+.project .box {
+  width: 158%;
+  display: none;
+  background: #719DC1;
+  box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  left: -44%;
+  right: 0;
+  margin: 0 auto;
+  bottom: -558%;
+  position: absolute;
+  z-index: 6;
+}
+.project .box .sm-box__title {
+  display: inline-block;
+  width: 100%;
+  background-color: #FFF;
+  padding: 12px 44px;
+  font-family: "../fonts/Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 137.02%;
+  color: #153149;
+  text-align: center;
+}
+.project .box .sm-box__content {
+  padding: 10px 20px;
+}
+.project .box .sm-box__desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 185.52%;
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+.project .box.box2 {
+  bottom: -156%;
+}
+.project .box.box3 {
+  bottom: -257%;
+  left: -38%;
+}
+.project .box:hover {
+  display: block;
 }
 .project .press {
+  display: inline-block;
   width: 99%;
   height: 38px;
   background: #FFFFFF;
@@ -615,6 +676,12 @@ body {
   margin-bottom: 15px;
   padding: 8px 0;
 }
+.project .show-box1 {
+  position: relative;
+}
+.project .show-box1 .press:hover + .box {
+  display: block;
+}
 .project .press_blue {
   width: 73%;
   background: #719DC1;
@@ -622,7 +689,7 @@ body {
   color: #FFFFFF;
 }
 .project__sm-title {
-  width: 277px;
+  width: 95%;
   height: 61px;
   border: 3px solid #137DC5;
   border-radius: 3px;
@@ -635,7 +702,7 @@ body {
   margin-right: 40px;
 }
 .project__funding .project__sm-title {
-  width: 522px;
+  width: 89%;
   margin-right: 69px;
 }
 .project__management .project__sm-title {
@@ -648,7 +715,7 @@ body {
 }
 .project__management .press {
   width: 82% !important;
-  margin-left: 7px;
+  margin-left: 15px;
   margin-bottom: 25px !important;
 }
 .project__execution .project__sm-title {
@@ -657,7 +724,7 @@ body {
 .project__execution .press_execution {
   width: 81%;
   height: 70px !important;
-  margin-left: 8px !important;
+  margin-left: 16px !important;
   margin-right: 0 !important;
 }
 .project .funding {
@@ -689,17 +756,18 @@ body {
 .project .funding__right .svg4 {
   position: absolute;
   top: 8px;
-  right: -2px;
+  right: -20px;
 }
 .project .funding__right .svg5 {
   position: absolute;
   top: 69px;
-  right: -2px;
+  right: -20px;
 }
 .project .funding__right .svg6 {
   position: absolute;
   top: 81px;
-  right: -324px;
+  right: -300px;
+  z-index: 5;
 }
 
 .footer {
