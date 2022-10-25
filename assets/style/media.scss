@@ -40,6 +40,13 @@
   top: 200px;
   right: -456px;
 }
+  .project {
+    & .funding__right {
+      & .svg6 {
+        right: -131%;
+      }
+    }
+  }
 }
 @media (max-width: 1980px){
   .future__hands {
@@ -53,10 +60,10 @@
     right: -301px;
   }
   .goals__steps .step__number::after {
-    top: 121px;
+    top: 120px;
   }
   .goals__steps .step__two .step__number::after {
-    top: 121px;
+    top: 120px;
   }
 }
 @media (max-width: 1600px){
@@ -78,6 +85,27 @@
     top: 177px;
     right: -120px;
   }
+  .project {
+    & .funding__right {
+      & .svg6 {
+        right: -131%;
+      }
+    }
+  }
+}
+@media (max-width: 1380px) {
+  .project {
+    & .funding__right {
+      & .svg6 {
+        right: -135%;
+      }
+    }
+  }
+}
+@media (max-width: 1334px) {
+  .project .box .sm-box__title {
+    padding: 12px 22px;
+  }
 }
 @media (max-width: 1300px){
   .future__hands {
@@ -86,8 +114,25 @@
     right: -90px;
   }
   .project {
-    & .container {
-      max-width: 800px;
+    &__sm-title {
+      font-size: 22px;
+    }
+    & .press {
+      font-size: 14px;
+    }
+    & .box {
+      bottom: -520%;
+      & .sm-box__desc {
+        font-size: 14px;
+      }
+      & .sm-box__title {
+        font-size: 14px;
+      }
+    }
+    & .funding__right {
+      & .svg6 {
+        right: -140%;
+      }
     }
   }
 }
@@ -97,9 +142,6 @@
     top: 183px;
     right: -50px;
   }
-
-
-
   .now {
     .container {
       max-width: 776px;
@@ -115,6 +157,22 @@
         width: 214px;
         height: 144px;
       }
+    }
+  }
+  .project {
+    & .funding__right {
+      & .svg6 {
+        right: -145%;
+      }
+      & .svg5 {
+        right: -18%;
+      }
+      & .svg4 {
+        right: -18%;
+      }
+    }
+    &__sm-title {
+      width: 102%;
     }
   }
 }
@@ -284,7 +342,7 @@
     }
   }
   .goals__steps .step__two .step__number::after {
-    top: 121px;
+    top: 120px;
   }
 }
 @media (max-width: 750px) {
@@ -370,6 +428,15 @@
       right: -59px;
     }
   }
+  .now {
+    &__images {
+      display: none;
+    }
+    & .swiper {
+      display: block;
+    }
+
+  }
   .goals__steps .step__number::after {
     top: 120px;
   }
@@ -382,6 +449,7 @@
   .goals__steps {
     margin-left: 0px;
   }
+
 }
 @media (max-width: 650px) {
   .demo {
