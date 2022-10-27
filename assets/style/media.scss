@@ -33,8 +33,8 @@
 
 @media (max-width: 2200px) {
 .future__hands {
-  top: 200px;
-  right: -456px;
+  bottom: -226px;
+  right: -10px;
 }
   .project {
     & .funding__right {
@@ -46,14 +46,14 @@
 }
 @media (max-width: 1980px){
   .future__hands {
-    top: 183px;
-    right: -383px;
+    bottom: -226px;
+    right: -10px;
   }
 }
 @media (max-width: 1800px){
   .future__hands {
-    top: 183px;
-    right: -301px;
+    bottom: -226px;
+    right: -10px;
   }
   .goals__steps .step__number::after {
     top: 120px;
@@ -64,22 +64,22 @@
 }
 @media (max-width: 1600px){
   .future__hands {
-    top: 180px;
-    right: -211px;
+    bottom: -226px;
+    right: -10px;
   }
 
 }
 @media (max-width: 1500px){
   .future__hands {
-    top: 183px;
-    right: -176px;
+    bottom: -226px;
+    right: -10px;
   }
 
 }
 @media (max-width: 1440px){
   .future__hands {
-    top: 177px;
-    right: -120px;
+    bottom: -226px;
+    right: -10px;
   }
   .project {
     & .funding__right {
@@ -105,9 +105,8 @@
 }
 @media (max-width: 1300px){
   .future__hands {
-    position: absolute;
-    top: 172px;
-    right: -90px;
+    bottom: -226px;
+    right: -10px;
   }
   .project {
     &__sm-title {
@@ -137,9 +136,8 @@
 }
 @media (max-width: 1200px) {
   .future__hands {
-    position: absolute;
-    top: 183px;
-    right: -50px;
+    bottom: -226px;
+    right: -10px;
   }
   .now {
     .container {
@@ -188,8 +186,8 @@
   .future__hands {
     width: 372px;
     height: 451px;
-    top: 394px;
-    right: -3px;
+    bottom: -106px;
+    right: -10px;
   }
   .goals__steps .step__number::after {
     width: 800px;
@@ -207,7 +205,7 @@
 }
 @media (max-width: 1100px){
   .future__hands {
-    top: 395px;
+    bottom: -106px;
   }
   .goals__steps .step__number::after {
     width: 700px;
@@ -222,11 +220,11 @@
   }
 }
 @media (max-width: 1050px){
-  .future__hands {
-
-  }
 }
 @media (max-width: 1000px){
+  .future__hands {
+    bottom: -134px;
+  }
   .people__donors {
     padding: 101px 45px;
   }
@@ -295,9 +293,11 @@
 }
 
 @media (max-width: 950px) {
-
+  .future {
+    height: 88vh;
+  }
   .future__hands {
-    top: 466px;
+    bottom: -120px;
   }
   .goals__steps .step__number::after {
     width: 600px;
@@ -376,10 +376,10 @@
 }
 @media (max-width: 850px){
   .future {
+    height: 95vh;
     padding-top: 40px;
     &__hands {
-      top: 540px;
-      right: -4px;
+      bottom: -120px;
     }
     & .container{
       flex-direction: column;
@@ -420,6 +420,9 @@
     }
     &__watch {
       width: 234px;
+    }
+    &__hands {
+
     }
   }
   .goals__steps .step__number::after {
@@ -475,19 +478,87 @@
     }
   }
   .project {
-    &__parts {
-      & .grid__col-3 {
+    & .press {
+      width: 100%;
+    }
+    &__sm-title {
+       width: 82%;
+       margin: 0 auto 15px;
+     }
+    & .grid__col-3 {
+        grid-template-columns: 1fr;
+    }
+    &__funding {
+      & .project__sm-title {
+        width: 82%;
+        margin: 0 auto 15px;
+        text-align: center;
+      }
+      & .grid__col-2 {
         grid-template-columns: 1fr;
       }
+      & .funding {
+        &__left {
+          margin: 0 auto;
+          & svg {
+            display: none;
+          }
+        }
+        &__right {
+          margin-top: 0;
+          & svg {
+            display: none;
+          }
+
+        }
+        &__test {
+          width: 89%;
+          margin: 0 auto;
+        }
+        &__test2 {
+          width: 72%;
+          margin: 0 auto;
+        }
+      }
+    }
+    &__management {
+      & .management__test {
+        width: 72%;
+        margin: 0 auto;
+      }
+      & .press {
+        width: 100% !important;
+        margin-left: 0;
+      }
+    }
+    &__execution {
+      & .project__sm-title {
+        margin-bottom: 10px;
+      }
+      & .execution__test {
+        width: 72%;
+        margin: 0 auto;
+        & .press {
+          margin-left: 0 !important;
+        }
+      }
+    }
+    & .box {
+      width: 137%;
+      left: -17%;
+    }
+    & .box.box3 {
+      bottom: -239%;
+      left: -19%;
     }
   }
 }
 @media (max-width: 750px) {
 
   .future {
+    height: 100vh;
     &__hands {
-      top: 540px;
-      right: -40px;
+      bottom: -94px;
     }
   }
   .demo {
@@ -560,7 +631,7 @@
   }
   .future {
     &__hands {
-      right: -59px;
+      right: -50px;
     }
   }
   .now {
@@ -585,10 +656,10 @@
     padding: 0 10px;
   }
   .future {
-    height: 117vh;
+    height: 110vh;
     &__hands {
-      top: 665px;
-      right: -46px;
+      display: none;
+      bottom: -94px;
     }
   }
   .goals__steps .step__number::after {
@@ -608,11 +679,7 @@
 }
 @media (max-width: 600px) {
   .future {
-    height: 125vh;
-    &__hands {
-      top: 711px;
-      right: -36px;
-    }
+    height: 115vh;
   }
   .goals__steps .step__desc {
     font-size: 17px;
@@ -639,7 +706,6 @@
     }
   }
   .future {
-    height: 125vh;
     padding: 0 20px;
     &__left {
       height: 179px;
@@ -653,8 +719,6 @@
       margin-top: 75px;
     }
     &__hands {
-      top: 796px;
-      right: -58px;
     }
   }
   .fundraising__live {
@@ -683,6 +747,9 @@
   }
 }
 @media (max-width: 500px) {
+  .future__title {
+    width: 356px;
+  }
   .demo {
    text-align: center;
     &__loc {
@@ -711,9 +778,18 @@
 
 
   }
+  .concept .card__desc {
+    font-size: 12px;
+  }
 
 }
 @media (max-width: 450px) {
+  .header__link {
+    font-size: 14px;
+  }
+  .future {
+    height: 122vh;
+  }
   .demo {
     &__loc {
       top: 37px;
