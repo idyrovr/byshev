@@ -613,7 +613,7 @@ body {
   background: #153149;
 }
 .project .grid__col-3 {
-  grid-template-columns: 2fr 1fr 1fr !important;
+  grid-template-columns: 2fr 1fr 1fr;
 }
 .project__parts {
   margin-top: 87px;

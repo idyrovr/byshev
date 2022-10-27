@@ -663,7 +663,7 @@ body {
     }
   }
   & .grid__col-3 {
-    grid-template-columns: 2fr 1fr 1fr !important;
+    grid-template-columns: 2fr 1fr 1fr;
   }
   &__parts {
     margin-top: 87px;

@@ -475,10 +475,78 @@
     }
   }
   .project {
-    &__parts {
-      & .grid__col-3 {
+    & .press {
+      width: 100%;
+    }
+    &__sm-title {
+       width: 82%;
+       margin: 0 auto 15px;
+     }
+    & .grid__col-3 {
+        grid-template-columns: 1fr;
+    }
+    &__funding {
+      & .project__sm-title {
+        width: 82%;
+        margin: 0 auto 15px;
+        text-align: center;
+      }
+      & .grid__col-2 {
         grid-template-columns: 1fr;
       }
+      & .funding {
+        &__left {
+          margin: 0 auto;
+          & svg {
+            display: none;
+          }
+        }
+        &__right {
+          margin-top: 0;
+          & svg {
+            display: none;
+          }
+
+        }
+        &__test {
+          width: 89%;
+          margin: 0 auto;
+        }
+        &__test2 {
+          width: 72%;
+          margin: 0 auto;
+        }
+      }
+    }
+    &__management {
+      & .management__test {
+        width: 72%;
+        margin: 0 auto;
+      }
+      & .press {
+        width: 100% !important;
+        margin-left: 0;
+      }
+    }
+    &__execution {
+      & .project__sm-title {
+        margin-bottom: 10px;
+      }
+      & .execution__test {
+        width: 72%;
+        margin: 0 auto;
+        & .press {
+          margin-left: 0 !important;
+        }
+      }
+    }
+    & .box {
+      width: 137%;
+      left: -17%;
+    }
+    & .box.box3 {
+      bottom: -239%;
+      left: -19%;
     }
   }
 }

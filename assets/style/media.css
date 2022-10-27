@@ -388,8 +388,69 @@
   .footer__right {
     margin-top: 95px;
   }
-  .project__parts .grid__col-3 {
+  .project .press {
+    width: 100%;
+  }
+  .project__sm-title {
+    width: 82%;
+    margin: 0 auto 15px;
+  }
+  .project .grid__col-3 {
     grid-template-columns: 1fr;
+  }
+  .project__funding .project__sm-title {
+    width: 82%;
+    margin: 0 auto 15px;
+    text-align: center;
+  }
+  .project__funding .grid__col-2 {
+    grid-template-columns: 1fr;
+  }
+  .project__funding .funding__left {
+    margin: 0 auto;
+  }
+  .project__funding .funding__left svg {
+    display: none;
+  }
+  .project__funding .funding__right {
+    margin-top: 0;
+  }
+  .project__funding .funding__right svg {
+    display: none;
+  }
+  .project__funding .funding__test {
+    width: 89%;
+    margin: 0 auto;
+  }
+  .project__funding .funding__test2 {
+    width: 72%;
+    margin: 0 auto;
+  }
+  .project__management .management__test {
+    width: 72%;
+    margin: 0 auto;
+  }
+  .project__management .press {
+    width: 100% !important;
+    margin-left: 0;
+  }
+  .project__execution .project__sm-title {
+    margin-bottom: 10px;
+  }
+  .project__execution .execution__test {
+    width: 72%;
+    margin: 0 auto;
+  }
+  .project__execution .execution__test .press {
+    margin-left: 0 !important;
+  }
+  .project .box {
+    width: 137%;
+    left: -17%;
+  }
+  .project .box.box3 {
+    bottom: -239%;
+    left: -19%;
   }
 }
 @media (max-width: 750px) {
