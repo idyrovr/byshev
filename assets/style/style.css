@@ -909,15 +909,14 @@ body {
 .adminMain__left {
   padding-left: 20px;
 }
-
-.live {
+.adminMain__left .live {
   padding-top: 50px;
 }
-.live__current {
+.adminMain__left .live__current {
   width: 100px;
   margin-bottom: 10px;
 }
-.live__current .current {
+.adminMain__left .live__current .current {
   border: 1px solid #E8E8E8;
   border-radius: 5px;
   font-weight: 400;
@@ -929,17 +928,17 @@ body {
   width: 150px;
   padding: 10px;
 }
-.live__current .current__lab {
+.adminMain__left .live__current .current__lab {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #4A5568;
   margin-bottom: 11px;
 }
-.live__total {
+.adminMain__left .live__total {
   width: 100px;
 }
-.live__total .total {
+.adminMain__left .live__total .total {
   border: 1px solid #E8E8E8;
   border-radius: 5px;
   font-weight: 400;
@@ -951,14 +950,14 @@ body {
   width: 150px;
   padding: 10px;
 }
-.live__total .total__lab {
+.adminMain__left .live__total .total__lab {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #4A5568;
   margin-bottom: 11px;
 }
-.live__save {
+.adminMain__left .live__save {
   background: #04C45C;
   border-radius: 5px;
   border: none;
@@ -969,11 +968,10 @@ body {
   height: 40px;
   width: 60px;
 }
-
-.cards {
+.adminMain__left .cards {
   margin-top: 100px;
 }
-.cards .title {
+.adminMain__left .cards .title {
   border: 1px solid #E8E8E8;
   border-radius: 5px;
   font-weight: 400;
@@ -985,14 +983,14 @@ body {
   width: 300px;
   padding: 10px;
 }
-.cards .title__lab {
+.adminMain__left .cards .title__lab {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #4A5568;
   margin-bottom: 11px;
 }
-.cards .imageCard {
+.adminMain__left .cards .imageCard {
   border: 1px solid #E8E8E8;
   border-radius: 5px;
   font-weight: 400;
@@ -1004,14 +1002,14 @@ body {
   width: 300px;
   padding: 10px;
 }
-.cards .imageCard__lab {
+.adminMain__left .cards .imageCard__lab {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #4A5568;
   margin-bottom: 11px;
 }
-.cards__save {
+.adminMain__left .cards__save {
   background: #04C45C;
   border-radius: 5px;
   border: none;
@@ -1023,7 +1021,7 @@ body {
   width: 60px;
   margin-right: 10px;
 }
-.cards__del {
+.adminMain__left .cards__del {
   background: darkred;
   border-radius: 5px;
   border: none;
@@ -1033,6 +1031,66 @@ body {
   color: #FFFFFF;
   height: 40px;
   width: 60px;
+}
+.adminMain__left .cards__exist {
+  margin-top: 20px;
+  width: 350px;
+  gap: 20px;
+}
+.adminMain__left .cards__exist .card {
+  box-shadow: 23px 4px 26px -3px rgba(34, 60, 80, 0.2);
+  border-radius: 4px;
+}
+.adminMain__left .cards__exist .card__image {
+  width: 100%;
+  height: 180px;
+}
+.adminMain__left .cards__exist .card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.adminMain__left .cards__exist .card__title {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 160px;
+  height: 1.2em;
+  white-space: nowrap;
+  padding: 0 10px;
+}
+.adminMain__left .cards__exist .card__pdf {
+  padding: 0 10px 10px 10px;
+}
+.adminMain__left .cards__exist .card__file {
+  width: 20px;
+  height: 20px;
+}
+.adminMain__left .cards__exist .card__file img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.adminMain__left .cards__exist .card__del {
+  background: darkred;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  width: 30px;
+}
+.adminMain__left .cards__exist .card__pdf-name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 85px;
+  height: 1.2em;
+  white-space: nowrap;
 }
 
 .w-100 {

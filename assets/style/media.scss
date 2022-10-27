@@ -10,31 +10,27 @@
 }
 @media only screen and (max-height: 950px) {
   .future {
-    height: 90vh
+    height: 100vh
   }
 }
 @media only screen and (max-height: 900px) {
   .future {
-    height: 95vh
+
   }
 }
 @media only screen and (max-height: 850px) {
   .future {
-    height: 100vh
+
   }
 }
 @media only screen and (max-height: 800px){
   .future {
-    height: 110vh
+
   }
   .future__hands {
   }
 }
-@media only screen and (max-height: 750px) {
-  .future {
-    height: 115vh
-  }
-}
+
 @media (max-width: 2200px) {
 .future__hands {
   top: 200px;
@@ -135,8 +131,11 @@
       }
     }
   }
+  .goals__steps .step__two .step__number::after {
+    top: 120px;
+  }
 }
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
   .future__hands {
     position: absolute;
     top: 183px;
@@ -146,12 +145,14 @@
     .container {
       max-width: 776px;
     }
+
     &__left {
       & .now__image {
         width: 314px;
         height: 298px;
       }
     }
+
     &__right {
       & .now__image {
         width: 214px;
@@ -164,16 +165,22 @@
       & .svg6 {
         right: -145%;
       }
+
       & .svg5 {
         right: -18%;
       }
+
       & .svg4 {
         right: -18%;
       }
     }
+
     &__sm-title {
       width: 102%;
     }
+  }
+  .goals__steps .step__two .step__number::after {
+    top: 121px;
   }
 }
 @media (max-width: 1150px){
@@ -209,6 +216,9 @@
   }
 }
 @media (max-width: 1050px){
+  .future__hands {
+
+  }
 }
 @media (max-width: 1000px){
   .people__donors {
@@ -279,9 +289,7 @@
 }
 
 @media (max-width: 950px) {
-  .future {
-    height: 104vh;
-  }
+
   .future__hands {
     top: 466px;
   }
@@ -292,6 +300,7 @@
   .goals__steps .step__two .step__number::after {
     width: 550px;
     right: -538px;
+    top: 120px;
   }
   .goals__steps .step__three .step__number::after {
     right: -568px;
@@ -301,6 +310,30 @@
   }
 }
 @media (max-width: 900px){
+  .goals__steps .step__two {
+    margin-left: 0;
+  }
+  .goals__steps .step__number {
+    font-size: 120px;
+  }
+  .goals__steps {
+    margin-left: 35px;
+  }
+  .goals__steps .step__number::after {
+    height: 16px;
+    top: 109px;
+  }
+  .goals__steps .step__two .step__number::after {
+    height: 16px;
+    top: 109px;
+  }
+  .goals__steps .step__three .step__number::after {
+    height: 15px;
+    top: 112px;
+  }
+
+
+
   .concept .card__desc {
     font-size: 22px;
   }
@@ -373,11 +406,36 @@
   .footer__phone {
     font-size: 16px;
   }
+
+  .project {
+    padding: 27px 54px;
+    &__sm-title {
+      font-size: 16px;
+    }
+    & .funding {
+      gap: 41px;
+    &__right {
+      & .show-box1 {
+        & .press_blue {
+          line-height: 120%;
+          padding: 6px 0;
+        }
+      }
+
+    }
+      &__left {
+        & .svg2 {
+        }
+      }
+    }
+    .press {
+      font-size: 12px;
+    }
+
+  }
 }
 @media (max-width: 800px){
-  .goals__steps .step__two {
-    margin-left: 0;
-  }
+
   .people__grid {
     grid-template-columns: 1fr;
   }
@@ -401,9 +459,6 @@
       margin-top: 95px;
     }
   }
-  .goals__steps .step__two .step__number::after {
-    top: 120px;
-  }
 }
 @media (max-width: 750px) {
 
@@ -422,9 +477,7 @@
       left: 272px;
     }
   }
-  .goals__steps {
-    margin-left: 35px;
-  }
+
   .concept .card__desc {
     font-size: 17px;
   }
@@ -497,17 +550,11 @@
     }
 
   }
-  .goals__steps .step__number::after {
-    top: 120px;
-  }
-  .goals__steps .step__two .step__number::after {
-    top: 120px;
-  }
   .goals__steps .step__number {
     margin-right: 3px;
   }
   .goals__steps {
-    margin-left: 0px;
+    margin-left: 2px;
   }
 
 }
@@ -624,6 +671,7 @@
   .goals__steps .step__desc {
     line-height: 100.02%;
     font-size: 16px;
+    margin-bottom: 57px;
   }
   .goals__steps .step__number {
     font-size: 103px;
@@ -650,5 +698,8 @@
       left: 166px;
     }
   }
-
+  .goals__steps .step__two .step__number::after {
+    height: 13px !important;
+    top: 93px;
+  }
 }
