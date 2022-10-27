@@ -1,6 +1,9 @@
 @import "./fonts.css";
 @import "./reset.css";
 
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: "../fonts/Inter", sans-serif;
 }
@@ -87,6 +90,7 @@ body {
   width: 100%;
 
   &__link {
+    position: relative;
     font-family: '../fonts/Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -94,6 +98,20 @@ body {
     line-height: 21px;
     text-transform: uppercase;
     color: #153149;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      bottom: -7px;
+      left: 50%;
+      background-color: #153149;
+      width: 0%;
+      transition: 0.3s;
+      transform: translateX(-50%);
+    }
+    &:hover:before {
+      width: 110%;
+    }
 
     &:not(:last-child) {
       margin-right: 50px;
@@ -176,6 +194,13 @@ body {
     font-size: 16px;
     line-height: 149.52%;
     color: #FFFFFF;
+    & .byshevSpan {
+      transition: 1s;
+    }
+    &:hover .byshevSpan {
+      color: #FACF39;
+      font-size: 20px;
+    }
   }
 
   &__timeline {
@@ -226,6 +251,10 @@ body {
     background: rgba(2, 41, 67, 0.45);
     border: 3px solid #137DC5;
     border-radius: 4px;
+    box-shadow: 4px 13px 8px 2px rgba(34, 60, 80, 0.2);
+    &:hover {
+      background: rgba(33, 91, 123, 0.45);
+    }
   }
 
   &__donate {
@@ -240,13 +269,21 @@ body {
     top: 528px;
     background: #FACF39;
     border-radius: 4px;
+    transition: 0.9s;
+    transition-property: background, color, box-shadow;
+    box-shadow: 4px 13px 8px 2px rgba(34, 60, 80, 0.2);
+    &:hover {
+      background: #04C45C;
+      color: white;
+      box-shadow: 4px 13px 8px -25px rgba(34, 60, 80, 0.2);
+  }
   }
   &__bottom {
     margin-top: 100px;
  }
   &__hands {
     position: absolute;
-    top: 160px;
+    bottom: 0;
     right: -137px;
     & img {
       width: 100%;
@@ -480,6 +517,7 @@ body {
   & .card {
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
     border-radius: 3px;
+    transition: 0.4s;
     &__title {
       text-align: center;
       height: 48px;
@@ -493,6 +531,13 @@ body {
       line-height: 137.02%;
       color: #153149;
     }
+    &:hover {
+      background-color: #137DC5;
+      & .card__desc {
+        color: white;
+      }
+    }
+
   }
   &__div {
     width: 556px;
