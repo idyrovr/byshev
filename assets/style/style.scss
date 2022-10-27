@@ -15,6 +15,9 @@ body {
   display: grid;
 }
 
+.grid__col-6 {
+  grid-template-columns: 1fr 1fr;
+}
 .grid__col-1 {
   grid-template-columns: 1fr;
 }
@@ -924,5 +927,63 @@ body {
   }
 }
 
+//auth__page
+.grid {
+  display: grid;
 
+}
+.auth {
+  &__right {
+    padding-bottom: 50px;
+  }
+  &__img {
+    background: url("../images/earth.jpg") no-repeat center/cover;
+    height: 100vh;
+  }
+  &__form {
+    width: 347px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #1A202C;
+  }
+  &__welcome {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2D3748;
+    margin-top: 5px;
+    margin-left: 86px;
+  }
+  &__cin {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2D3748;
+    height: 50px;
+    margin-bottom: 11px;
+  }
+  &__lab {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4A5568;
+    margin-bottom: 11px;
+  }
+  &__login {
+    background: #04C45C;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    height: 50px;
+  }
+}
+//auth__page
 
