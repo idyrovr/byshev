@@ -935,6 +935,10 @@ body {
 .auth {
   &__right {
     padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  &__logo {
+   margin-bottom: 100px;
   }
   &__img {
     background: url("../images/earth.jpg") no-repeat center/cover;
@@ -986,4 +990,154 @@ body {
   }
 }
 //auth__page
+
+//adminMain
+
+
+.adminMain {
+  &__image {
+    width: 100%;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+  &__left {
+    padding-left: 20px;
+  }
+}
+.live {
+  padding-top: 50px;
+  &__current {
+    width: 100px;
+    margin-bottom: 10px;
+    & .current {
+      border: 1px solid #E8E8E8;
+      border-radius: 5px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 16px;
+      color: #2D3748;
+      height: 50px;
+      margin-bottom: 11px;
+      width: 150px;
+      padding: 10px;
+      &__lab {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #4A5568;
+        margin-bottom: 11px;
+      }
+    }
+  }
+  &__total {
+    width: 100px;
+    & .total {
+      border: 1px solid #E8E8E8;
+      border-radius: 5px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 16px;
+      color: #2D3748;
+      height: 50px;
+      margin-bottom: 11px;
+      width: 150px;
+      padding: 10px;
+      &__lab {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #4A5568;
+        margin-bottom: 11px;
+      }
+    }
+  }
+  &__save {
+    background: #04C45C;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    height: 40px;
+    width: 60px;
+  }
+  }
+.cards {
+  margin-top: 100px;
+  & .title {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+    color: #2D3748;
+    height: 40px;
+    margin-bottom: 11px;
+    width: 300px;
+    padding: 10px;
+    &__lab {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #4A5568;
+      margin-bottom: 11px;
+    }
+  }
+  & .imageCard {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+    color: #2D3748;
+    height: 40px;
+    margin-bottom: 11px;
+    width: 300px;
+    padding: 10px;
+    &__lab {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #4A5568;
+      margin-bottom: 11px;
+    }
+  }
+  &__save {
+    background: #04C45C;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    height: 40px;
+    width: 60px;
+    margin-right: 10px;
+  }
+  &__del {
+    background: darkred;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    height: 40px;
+    width: 60px;
+  }
+
+}
+
+.w-100 {
+  width: 100%;
+}
+
+
+
+
 

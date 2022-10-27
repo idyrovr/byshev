@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+<section class="adminMain grid grid__col-2">
+    <div class="adminMain__left">
+            <div class="live">
+                <form class="live__form">
+                    <div class="live__current d-flex flex-column">
+                        <label class="current__lab" for="current">Raised</label>
+                        <input class="current" type="text" id="current">
+                    </div>
+
+                    <div class="live__total d-flex flex-column">
+                        <label class="total__lab" for="total">Goal</label>
+                        <input class="total" type="text" id="total">
+                    </div>
+
+                    <button class="live__save">Save</button>
+                </form>
+            </div>
+            <div class="cards">
+                <form class="cards__form">
+                    <div class="container">
+                        <div class="cards__title d-flex flex-column">
+                            <label class="title__lab" for="title">Card title</label>
+                            <input type="text" class="title" id="title">
+                        </div>
+
+                        <div class="cards__title d-flex flex-column">
+                            <label class="imageCard__lab" for="image">Card Image</label>
+                            <input type="image" class="imageCard" id="image" alt="">
+                        </div>
+                        <button class="cards__save">Save</button>
+                        <button class="cards__del">Delete</button>
+
+                    </div>
+                </form>
+            </div>
+    </div>
+
+
+    <div class="adminMain__right">
+        <div class="adminMain__image">
+            <img src="./assets/images/byshev%201.JPG">
+        </div>
+        <div class="adminMain__image">
+            <img src="./assets/images/byshev%202.JPG">
+        </div>
+    </div>
+
+</section>
+
+
+</body>
+</html>

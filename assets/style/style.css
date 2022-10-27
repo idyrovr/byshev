@@ -843,6 +843,10 @@ body {
 
 .auth__right {
   padding-bottom: 50px;
+  padding-top: 50px;
+}
+.auth__logo {
+  margin-bottom: 100px;
 }
 .auth__img {
   background: url("../images/earth.jpg") no-repeat center/cover;
@@ -891,6 +895,148 @@ body {
   line-height: 19px;
   color: #FFFFFF;
   height: 50px;
+}
+
+.adminMain__image {
+  width: 100%;
+}
+.adminMain__image img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+.adminMain__left {
+  padding-left: 20px;
+}
+
+.live {
+  padding-top: 50px;
+}
+.live__current {
+  width: 100px;
+  margin-bottom: 10px;
+}
+.live__current .current {
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  color: #2D3748;
+  height: 50px;
+  margin-bottom: 11px;
+  width: 150px;
+  padding: 10px;
+}
+.live__current .current__lab {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4A5568;
+  margin-bottom: 11px;
+}
+.live__total {
+  width: 100px;
+}
+.live__total .total {
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  color: #2D3748;
+  height: 50px;
+  margin-bottom: 11px;
+  width: 150px;
+  padding: 10px;
+}
+.live__total .total__lab {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4A5568;
+  margin-bottom: 11px;
+}
+.live__save {
+  background: #04C45C;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  height: 40px;
+  width: 60px;
+}
+
+.cards {
+  margin-top: 100px;
+}
+.cards .title {
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  color: #2D3748;
+  height: 40px;
+  margin-bottom: 11px;
+  width: 300px;
+  padding: 10px;
+}
+.cards .title__lab {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4A5568;
+  margin-bottom: 11px;
+}
+.cards .imageCard {
+  border: 1px solid #E8E8E8;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  color: #2D3748;
+  height: 40px;
+  margin-bottom: 11px;
+  width: 300px;
+  padding: 10px;
+}
+.cards .imageCard__lab {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4A5568;
+  margin-bottom: 11px;
+}
+.cards__save {
+  background: #04C45C;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  height: 40px;
+  width: 60px;
+  margin-right: 10px;
+}
+.cards__del {
+  background: darkred;
+  border-radius: 5px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  height: 40px;
+  width: 60px;
+}
+
+.w-100 {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
