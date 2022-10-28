@@ -407,6 +407,7 @@ body {
 }
 
 .goals {
+  height: auto;
   &__title {
     font-family: '../fonts/Montserrat', sans-serif;
     font-style: normal;
@@ -418,6 +419,7 @@ body {
     margin: 114px 0 76px;
     text-align: center;
   }
+
   &__steps {
     margin-left: 102px;
     & .step {
