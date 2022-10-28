@@ -380,6 +380,9 @@ body {
   object-position: center;
 }
 
+.goals {
+  height: auto;
+}
 .goals__title {
   font-family: "../fonts/Montserrat", sans-serif;
   font-style: normal;

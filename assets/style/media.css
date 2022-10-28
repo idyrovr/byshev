@@ -392,6 +392,9 @@
   .footer__right {
     margin-top: 95px;
   }
+  .project {
+    height: auto;
+  }
   .project .press {
     width: 100%;
   }
@@ -663,18 +666,57 @@
     font-size: 14px;
   }
   .future {
-    height: 122vh;
+    height: 133vh;
+  }
+  .goals__steps .step__number::after {
+    width: 245px;
+    right: -222px;
+  }
+  .goals__steps .step__two .step__number::after {
+    width: 273px;
+    right: -234px;
+  }
+  .goals__steps .step__three .step__number::after {
+    right: -222px;
+  }
+  .people__title {
+    font-size: 20px;
+  }
+  .people__desc {
+    font-size: 14px;
+  }
+  .people__link {
+    font-size: 15px;
+  }
+  .people .partners__svg {
+    display: none;
+  }
+  .demo__title {
+    font-size: 20px;
   }
   .demo__loc {
     top: 37px;
     left: 166px;
   }
   .goals__steps .step__two .step__number::after {
-    height: 13px !important;
-    top: 93px;
+    height: 15px !important;
+    top: 91px !important;
   }
   .fundraising__live {
     width: 307px;
+  }
+  .concept__div {
+    width: 300px;
+  }
+  .project__title {
+    font-size: 25px;
+  }
+  .project__title:before {
+    height: 3px;
+    top: 15px;
+  }
+  .footer__title {
+    font-size: 25px;
   }
 }
 
