@@ -124,7 +124,7 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
   height: 100vh;
-  padding-top: 120px;
+  padding-top: 40px;
   position: relative;
   background: url("../images/earth.jpg") no-repeat center/cover;
   clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 100% 100%, 50% 93%, 0 100%, 0% 70%, 0% 35%, 0 0);
@@ -416,7 +416,7 @@ body {
     line-height: 137.02%;
     text-transform: uppercase;
     color: #137DC5;
-    margin: 114px 0 76px;
+    margin: 114px 0 2px;
     text-align: center;
   }
 
@@ -684,7 +684,7 @@ body {
   overflow-x: hidden;
   margin-top: 43px;
   background-image: url("../images/My_test.jpg");
-  height: 721px;
+  height: auto;
   padding: 27px 132px;
 
 
@@ -795,10 +795,12 @@ body {
 
 
   .press_blue {
-    width: 73%;
+    width: 100%;
     background: #719DC1;
-    box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 11px 24px 12px rgba(0,0,0,0.1);
     color: #FFFFFF;
+
+
   }
 
   &__sm-title {
@@ -820,7 +822,9 @@ body {
       width: 89%;
       margin-right: 69px;
     }
-  }
+    }
+
+
 
   &__management {
     .project__sm-title {
@@ -836,11 +840,33 @@ body {
     }
 
     .press {
-      width: 82% !important;
-      margin-left: 15px;
+      width: 95%;
       margin-bottom: 25px !important;
+      text-align: center;
     }
+    & .management__test {
+      width: 94%;
+      text-align: center;
+    }
+   & .management__office {
+     width: 96%;
+     border-radius: 5px;
+     border: 2px solid #137DC5;
+     text-align: center;
+     margin: 0 auto;
+     & .office__title {
+       width: 100%;
+       border-radius: 3px;
+       font-weight: 600;
+       font-size: 16px;
+       color: #004988;
+       text-align: center;
+       padding: 12px 0;
+       margin-bottom: 5px;
+     }
+   }
   }
+
 
   &__execution {
     .project__sm-title {
@@ -888,7 +914,7 @@ body {
 
       & .svg4 {
         position: absolute;
-        top: 8px;
+        top: 70px;
         right: -20px;
       }
 
@@ -901,10 +927,53 @@ body {
       & .svg6 {
         position: absolute;
         top: 81px;
-        right: -300px;
+        right: -133%;
         z-index: 5;
       }
     }
+    &__foundation {
+      width: 75%;
+      border-radius: 5px;
+      padding: 2.5%;
+      border: 2px solid #137DC5;
+      & .foundation__title {
+        width: 100%;
+        border-radius: 3px;
+        font-weight: 600;
+        font-size: 16px;
+        color: #004988;
+        text-align: center;
+        padding: 12px 0;
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: 50px;
+    & .bottom {
+      &__cols {
+        gap: 20px;
+      }
+      &__col {
+        gap: 10px;
+      }
+      &__title {
+        font-size: 25px;
+        line-height: 131.02%;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #004988;
+      }
+      &__phone {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 131.02%;
+        text-decoration-line: underline;
+        color: #137DC5;
+      }
+    }
+
   }
 
 }
@@ -919,12 +988,17 @@ body {
     &::after {
       position: absolute;
       content: "";
-      width: 294px;
+      width: 191px;
       height: 2px;
       background: #FFFFFF;
-      top: 110px;
-      right: -146px;
+      top: 62px;
+      right: -97px;
       transform: rotate(-90deg);
+    }
+    & .bank {
+      &__details {
+        margin-bottom: 5px;
+      }
     }
   }
   &__title {
@@ -972,6 +1046,10 @@ body {
     text-align: center;
     padding: 41px 0 38px;
   }
+}
+
+.svg5 {
+  display: none;
 }
 
 //auth__page
