@@ -121,7 +121,7 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
   height: 100vh;
-  padding-top: 120px;
+  padding-top: 40px;
   position: relative;
   background: url("../images/earth.jpg") no-repeat center/cover;
   clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 100% 100%, 50% 93%, 0 100%, 0% 70%, 0% 35%, 0 0);
@@ -391,7 +391,7 @@ body {
   line-height: 137.02%;
   text-transform: uppercase;
   color: #137DC5;
-  margin: 114px 0 76px;
+  margin: 114px 0 2px;
   text-align: center;
 }
 .goals__steps {
@@ -637,7 +637,7 @@ body {
   overflow-x: hidden;
   margin-top: 43px;
   background-image: url("../images/My_test.jpg");
-  height: 721px;
+  height: auto;
   padding: 27px 132px;
 }
 .project__title {
@@ -735,9 +735,9 @@ body {
   display: block;
 }
 .project .press_blue {
-  width: 73%;
+  width: 100%;
   background: #719DC1;
-  box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 11px 24px 12px rgba(0, 0, 0, 0.1);
   color: #FFFFFF;
 }
 .project__sm-title {
@@ -766,9 +766,30 @@ body {
   color: #FFFFFF !important;
 }
 .project__management .press {
-  width: 82% !important;
-  margin-left: 15px;
+  width: 95%;
   margin-bottom: 25px !important;
+  text-align: center;
+}
+.project__management .management__test {
+  width: 94%;
+  text-align: center;
+}
+.project__management .management__office {
+  width: 96%;
+  border-radius: 5px;
+  border: 2px solid #137DC5;
+  text-align: center;
+  margin: 0 auto;
+}
+.project__management .management__office .office__title {
+  width: 100%;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #004988;
+  text-align: center;
+  padding: 12px 0;
+  margin-bottom: 5px;
 }
 .project__execution .project__sm-title {
   margin-bottom: 96px;
@@ -807,7 +828,7 @@ body {
 }
 .project .funding__right .svg4 {
   position: absolute;
-  top: 8px;
+  top: 70px;
   right: -20px;
 }
 .project .funding__right .svg5 {
@@ -818,8 +839,46 @@ body {
 .project .funding__right .svg6 {
   position: absolute;
   top: 81px;
-  right: -300px;
+  right: -133%;
   z-index: 5;
+}
+.project .funding__foundation {
+  width: 75%;
+  border-radius: 5px;
+  padding: 2.5%;
+  border: 2px solid #137DC5;
+}
+.project .funding__foundation .foundation__title {
+  width: 100%;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #004988;
+  text-align: center;
+  padding: 12px 0;
+}
+.project__bottom {
+  margin-top: 50px;
+}
+.project__bottom .bottom__cols {
+  gap: 20px;
+}
+.project__bottom .bottom__col {
+  gap: 10px;
+}
+.project__bottom .bottom__title {
+  font-size: 25px;
+  line-height: 131.02%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #004988;
+}
+.project__bottom .bottom__phone {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 131.02%;
+  text-decoration-line: underline;
+  color: #137DC5;
 }
 
 .footer {
@@ -833,12 +892,15 @@ body {
 .footer__left::after {
   position: absolute;
   content: "";
-  width: 294px;
+  width: 191px;
   height: 2px;
   background: #FFFFFF;
-  top: 110px;
-  right: -146px;
+  top: 62px;
+  right: -97px;
   transform: rotate(-90deg);
+}
+.footer__left .bank__details {
+  margin-bottom: 5px;
 }
 .footer__title {
   width: 321px;
@@ -883,6 +945,10 @@ body {
 .footer__bottom {
   text-align: center;
   padding: 41px 0 38px;
+}
+
+.svg5 {
+  display: none;
 }
 
 .grid {
