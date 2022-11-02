@@ -43,11 +43,18 @@
       }
     }
   }
+  .goals__steps .step__two .step__number::after {
+    top: 118px;
+    height: 19px;
+  }
 }
 @media (max-width: 1980px){
   .future__hands {
     bottom: -226px;
     right: -10px;
+  }
+  .project .funding__right .svg6 {
+    right: -133%;
   }
 }
 @media (max-width: 1800px){
@@ -59,7 +66,6 @@
     top: 120px;
   }
   .goals__steps .step__two .step__number::after {
-    top: 120px;
   }
 }
 @media (max-width: 1600px){
@@ -74,7 +80,10 @@
     bottom: -226px;
     right: -10px;
   }
-
+  .goals__steps .step__two .step__number::after {
+    top: 120px;
+    height: 17px;
+  }
 }
 @media (max-width: 1440px){
   .future__hands {
@@ -84,7 +93,7 @@
   .project {
     & .funding__right {
       & .svg6 {
-        right: -131%;
+        right: -135%;
       }
     }
   }
@@ -116,7 +125,6 @@
       font-size: 14px;
     }
     & .box {
-      bottom: -520%;
       & .sm-box__desc {
         font-size: 14px;
       }
@@ -131,7 +139,7 @@
     }
   }
   .goals__steps .step__two .step__number::after {
-    top: 120px;
+    top: 121px;
   }
 }
 @media (max-width: 1200px) {
@@ -161,7 +169,7 @@
   .project {
     & .funding__right {
       & .svg6 {
-        right: -145%;
+        right: -142%;
       }
 
       & .svg5 {
@@ -169,7 +177,7 @@
       }
 
       & .svg4 {
-        right: -18%;
+        right: -13%;
       }
     }
 
@@ -181,6 +189,7 @@
   .goals__steps .step__two .step__number::after {
     top: 121px;
   }
+
 }
 @media (max-width: 1150px){
   .future__hands {
@@ -230,6 +239,13 @@
   }
   .people__partners{
     padding: 101px 45px;
+  }
+  .goals__steps .step__two .step__number::after {
+    top: 120px;
+    height: 10%;
+  }
+  .project .funding__right .svg6 {
+    right: -149%;
   }
 }
 
@@ -326,16 +342,16 @@
     margin-left: 35px;
   }
   .goals__steps .step__number::after {
-    height: 16px;
-    top: 109px;
+    height: 14px;
+    top: 110px;
   }
   .goals__steps .step__two .step__number::after {
     height: 16px;
-    top: 109px;
+    top: 66.5%;
   }
   .goals__steps .step__three .step__number::after {
-    height: 15px;
-    top: 112px;
+    height: 14px;
+    top: 111px;
   }
 
 
@@ -361,10 +377,13 @@
             padding: 6px 0;
           }
         }
-
+        & svg {
+          display: none;
+        }
       }
       &__left {
-        & .svg2 {
+        & svg {
+          display: none;
         }
       }
     }
@@ -493,6 +512,7 @@
        width: 82%;
        margin: 0 auto 15px;
       color: #FFFFFF;
+      font-size: 20px;
      }
     & .grid__col-3 {
         grid-template-columns: 1fr;
@@ -518,18 +538,17 @@
         }
         &__right {
           margin-top: 0;
-          & svg {
-            display: none;
-          }
+
           & .funding__foundation {
             background-color: #fbcf3a;
             border-radius: 15px;
             margin: 0 auto;
+            width: 96%;
           }
 
         }
         &__test {
-          width: 89%;
+          width: 100%;
           margin: 0 auto;
         }
         &__test2 {
@@ -570,7 +589,7 @@
         margin-bottom: 10px;
       }
       & .execution__test {
-        width: 72%;
+        width: 67%;
         margin: 0 auto;
         & .project__desktop {
           display: none;
@@ -591,6 +610,26 @@
       bottom: -239%;
       left: -19%;
     }
+    &__bottom {
+      align-items: center;
+    }
+  }
+  .goals__steps .step__two .step__number::after {
+    height: 16px;
+    top: 65.5%;
+  }
+  .project .funding__right .show-box1 .press_blue {
+    line-height: 100%;
+    padding: 12px 0;
+  }
+  .project .funding__foundation .show-box1 .press::after {
+    width: 36%;
+  }
+  .project__management .management__office .show-box1 .press::after {
+    width: 22%;
+  }
+  .footer__left::after {
+    top: 182px;
   }
 }
 @media (max-width: 750px) {
@@ -778,12 +817,19 @@
   .goals__steps .step__desc {
     font-size: 16px;
   }
-
   .demo {
     &__loc {
       top: 48px;
       left: 219px;
     }
+  }
+  .project__funding .funding__test {
+    width: 85%;
+  }
+  .bottom__cols {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 @media (max-width: 500px) {
@@ -815,8 +861,7 @@
   }
   .step {
     margin-bottom: 10px;
-
-
+    align-items: flex-end;
   }
   .concept .card__desc {
     font-size: 12px;
