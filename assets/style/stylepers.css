@@ -125,7 +125,7 @@ body {
 }
 .personnel__cards {
   gap: 20px;
-  row-gap: 40px;
+  row-gap: 60px;
 }
 .personnel__title {
   position: relative;
@@ -163,7 +163,7 @@ body {
 }
 .personnel__card .card__image {
   width: 70%;
-  height: 200px;
+  height: 315px;
   margin: 0 auto;
 }
 .personnel__card .card__image img {

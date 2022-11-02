@@ -395,15 +395,28 @@
   .project {
     height: auto;
   }
+  .project__desktop {
+    display: none;
+  }
+  .project__mobile {
+    display: block;
+  }
   .project .press {
     width: 100%;
+    line-height: 180%;
   }
   .project__sm-title {
     width: 82%;
     margin: 0 auto 15px;
+    color: #FFFFFF;
   }
   .project .grid__col-3 {
     grid-template-columns: 1fr;
+  }
+  .project__funding {
+    background-color: #137dc5;
+    border-radius: 30px;
+    padding: 10px 0;
   }
   .project__funding .project__sm-title {
     width: 82%;
@@ -425,6 +438,11 @@
   .project__funding .funding__right svg {
     display: none;
   }
+  .project__funding .funding__right .funding__foundation {
+    background-color: #fbcf3a;
+    border-radius: 15px;
+    margin: 0 auto;
+  }
   .project__funding .funding__test {
     width: 89%;
     margin: 0 auto;
@@ -433,13 +451,34 @@
     width: 72%;
     margin: 0 auto;
   }
+  .project__management {
+    background-color: #137dc5;
+    border-radius: 30px;
+    padding: 10px 0;
+  }
   .project__management .management__test {
     width: 72%;
     margin: 0 auto;
   }
+  .project__management .management__test .project__desktop {
+    display: none;
+  }
+  .project__management .management__test .project__mobile {
+    display: block;
+    margin: 0 auto;
+  }
+  .project__management .management__test .management__office {
+    background-color: #fbcf3a;
+    border-radius: 15px;
+  }
   .project__management .press {
-    width: 100% !important;
+    width: 95% !important;
     margin-left: 0;
+  }
+  .project__execution {
+    background-color: #137dc5;
+    border-radius: 30px;
+    padding: 10px 0;
   }
   .project__execution .project__sm-title {
     margin-bottom: 10px;
@@ -447,6 +486,12 @@
   .project__execution .execution__test {
     width: 72%;
     margin: 0 auto;
+  }
+  .project__execution .execution__test .project__desktop {
+    display: none;
+  }
+  .project__execution .execution__test .project__mobile {
+    display: block;
   }
   .project__execution .execution__test .press {
     margin-left: 0 !important;

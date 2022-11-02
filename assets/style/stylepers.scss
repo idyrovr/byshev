@@ -126,7 +126,7 @@ body {
 
  &__cards {
    gap: 20px;
-   row-gap: 40px;
+   row-gap: 60px;
  }
    &__title {
       position: relative;
@@ -166,7 +166,7 @@ body {
       }
       &__image {
         width: 70%;
-        height: 200px;
+        height: 315px;
         margin: 0 auto;
 
         & img {
@@ -196,3 +196,4 @@ body {
     }
   }
 }
+

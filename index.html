@@ -120,6 +120,11 @@
     <div class="future__hands">
         <img src="./assets/images/hands.png">
     </div>
+    <div class="future__pictures">
+        <div class="future__picture">
+            <img src="./assets/images/rectangle1.png">
+        </div>
+    </div>
 </section>
 <section class="fundraising">
     <div class="container">
@@ -263,7 +268,7 @@
 </section>
 <section class="concept" id="concept">
     <div class="container">
-        <h2 class="concept__title">our projects</h2>
+        <h2 class="concept__title">Our projects</h2>
         <p class="concept__sm-title">Build priority facilities:</p>
         <div class="concept__cards grid grid__col-2">
             <div class="concept__card card d-flex flex-column">
@@ -393,7 +398,7 @@
     </div>
 
 </section>
-<section class="project">
+<section class="project" id="project">
     <div class="container">
         <h2 class="project__title">
             Project organization
@@ -436,7 +441,7 @@
                                     <p class="foundation__title subtitle">U Renew foundation</p>
                                     <div class="show-box1">
                                         <input id="board" type="checkbox" hidden>
-                                        <label class="press press_blue" for="board">Supervisory board</label>
+                                        <label class="press press_blue" for="board"><a href="#project">Supervisory board</a></label>
                                         <div class="box box1">
                                             <div class="sm-box d-flex flex-column justify-center">
                                                 <p class="sm-box__title">Supervisory board of trust fund</p>
@@ -455,14 +460,18 @@
                                                              xmlns="http://www.w3.org/2000/svg">
                                                             <circle cx="4" cy="4" r="4" fill="#FFF"></circle>
                                                         </svg>
-                                                        <p class="sm-box__desc">C Woll – IESE</p>
+                                                        <a href="./personnel.html#marina">
+                                                            <p class="sm-box__desc">C Woll – IESE/p>
+                                                        </a>
                                                     </div>
                                                     <div class="sm-box__row d-flex align-center">
                                                         <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
                                                              xmlns="http://www.w3.org/2000/svg">
                                                             <circle cx="4" cy="4" r="4" fill="#FFF"></circle>
                                                         </svg>
-                                                        <p class="sm-box__desc">A Tymoshenko - KPMG</p>
+                                                        <a href="./personnel.html#marina">
+                                                            <p class="sm-box__desc">A Tymoshenko - KPMG</p>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -474,22 +483,27 @@
                                                              xmlns="http://www.w3.org/2000/svg">
                                                             <circle cx="4" cy="4" r="4" fill="#FFF"></circle>
                                                         </svg>
-                                                        <p class="sm-box__desc">I Roznay – head of Byshiv community</p>
+                                                        <a href="./personnel.html#marina">
+                                                            <p class="sm-box__desc">I Roznay – head of Byshiv community</p>
+                                                        </a>
                                                     </div>
                                                     <div class="sm-box__row d-flex align-center">
                                                         <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
                                                              xmlns="http://www.w3.org/2000/svg">
                                                             <circle cx="4" cy="4" r="4" fill="#FFF"></circle>
                                                         </svg>
-                                                        <p class="sm-box__desc">M Koltsova – A&M</p>
+                                                        <a href="./personnel.html#marina">
+                                                            <p class="sm-box__desc">M Koltsova – A&M</p>
+                                                        </a>
                                                     </div>
                                                     <div class="sm-box__row d-flex align-center">
                                                         <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
                                                              xmlns="http://www.w3.org/2000/svg">
                                                             <circle cx="4" cy="4" r="4" fill="#FFF"></circle>
                                                         </svg>
-                                                        <p class="sm-box__desc">Head of urban engineering company
-                                                        </p>
+                                                        <a href="./personnel.html#6">
+                                                            <p class="sm-box__desc">Head of urban engineering company</p>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -497,7 +511,7 @@
                                     </div>
                                     <div class="show-box1 show-box2">
                                         <input id="fund" type="checkbox" hidden>
-                                        <label class="press press_blue" for="fund">Trust funds</label>
+                                        <label class="press press_blue" for="fund"><a href="#project">Trust fund</a></label>
                                         <div class="box box2">
                                             <div class="sm-box d-flex flex-column justify-center">
                                                 <p class="sm-box__title">Supervisory board of trust fund</p>
@@ -541,17 +555,17 @@
                 </div>
             </div>
             <div class="project__management">
-                <h4 class="project__sm-title">Project managment</h4>
+                <h4 class="project__sm-title">Project management</h4>
 
                 <div class="management__test">
-                    <p class="press">Byshev community</p>
-
+                    <p class="press project__desktop">Byshev community</p>
+                    <p class="press project__mobile">Community representative</p>
                     <div class="management__office">
                         <p class="office__title">U Renew foundation</p>
                         <p class="press">Steering committee</p>
                         <div class="show-box1 show-box3">
                             <input id="office" type="checkbox" hidden>
-                            <label class="press press_blue" for="office">Project office(LLC)</label>
+                            <label class="press press_blue" for="office"> <a href="#project">Project team</a></label>
                             <div class="box box3">
                                 <div class="sm-box d-flex flex-column justify-center">
                                     <p class="sm-box__title">Project office (LLC)</p>
@@ -599,7 +613,9 @@
             <div class="project__execution">
                 <h4 class="project__sm-title">Project execution</h4>
                 <div class="execution__test">
-                    <p class="press press_execution">Engineering and construction companies
+                    <p class="press press_execution project__desktop">Engineering and construction companies
+                    </p>
+                    <p class="press press_execution project__mobile">Subcontractors
                     </p>
                 </div>
 
