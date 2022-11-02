@@ -1,0 +1,9 @@
+@media (max-width: 800px) {
+  .grid__col-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .personnel {
+    padding: 27px 20px;
+  }
+}
+

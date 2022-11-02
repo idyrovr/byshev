@@ -127,7 +127,7 @@ body {
   padding-top: 40px;
   position: relative;
   background: url("../images/earth.jpg") no-repeat center/cover;
-  clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 100% 100%, 50% 93%, 0 100%, 0% 70%, 0% 35%, 0 0);
+  //clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 100% 100%, 50% 93%, 0 100%, 0% 70%, 0% 35%, 0 0);
 
   & .container {
     position: relative;
@@ -143,17 +143,17 @@ body {
     background: radial-gradient(34.04% 34.24% at 47.12% 72.71%,
             rgba(0, 27, 52, 0.3569) 0%, rgba(7, 21, 36, 0.83) 67.56%);
   }
-  &::after {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    content: "";
-    z-index: 3;
-    bottom: 0;
-    left: 0;
-    background: rgba(19, 107, 171, 0.4);
-    clip-path: polygon(50% 88%, 0% 100%, 100% 100%);
-  }
+  //&::after {
+  //  width: 100%;
+  //  height: 100%;
+  //  position: absolute;
+  //  content: "";
+  //  z-index: 3;
+  //  bottom: 0;
+  //  left: 0;
+  //  background: rgba(19, 107, 171, 0.4);
+  //  clip-path: polygon(50% 88%, 0% 100%, 100% 100%);
+  //}
   &__left {
     position: relative;
     margin-right: 58px;
@@ -195,11 +195,11 @@ body {
     line-height: 149.52%;
     color: #FFFFFF;
     & .byshevSpan {
-      transition: 1s;
-    }
-    &:hover .byshevSpan {
       color: #FACF39;
       font-size: 20px;
+    }
+    &:hover .byshevSpan {
+
     }
   }
 
@@ -290,7 +290,7 @@ body {
       height: 100%;
     }
   }
-
+  &__pictures
 }
 
 .fundraising {
@@ -688,6 +688,10 @@ body {
   padding: 27px 132px;
 
 
+  & a {
+    text-decoration: underline;
+    color: #FFFFFF;
+  }
   &__title {
     position: relative;
     font-family: '../fonts/Montserrat', sans-serif;
@@ -847,6 +851,9 @@ body {
     & .management__test {
       width: 94%;
       text-align: center;
+      & .project__mobile {
+        display: none;
+      }
     }
    & .management__office {
      width: 96%;
@@ -864,6 +871,20 @@ body {
        padding: 12px 0;
        margin-bottom: 5px;
      }
+     & .show-box1 {
+       & .press {
+         position: relative;
+         //&::after {
+         //  content: "";
+         //  position: absolute;
+         //  width: 76%;
+         //  height: 2px;
+         //  background-color: #FFFFFF;
+         //  top: 26px;
+         //  left: 24px;
+         //}
+       }
+     }
    }
   }
 
@@ -878,6 +899,9 @@ body {
       height: 70px !important;
       margin-left: 16px !important;
       margin-right: 0 !important;
+    }
+    & .project__mobile {
+      display: none;
     }
   }
 
@@ -945,11 +969,25 @@ body {
         text-align: center;
         padding: 12px 0;
       }
+      & .show-box1 {
+        & .press {
+          position: relative;
+          //&::after {
+          //  content: "";
+          //  position: absolute;
+          //  width: 94%;
+          //  height: 2px;
+          //  background-color: #FFFFFF;
+          //  top: 27px;
+          //  left: 4px;
+          //}
+        }
+      }
     }
   }
 
   &__bottom {
-    margin-top: 50px;
+    margin-top: 80px;
     & .bottom {
       &__cols {
         gap: 20px;
