@@ -1,6 +1,7 @@
 @import "./fonts.css";
 @import "./reset.css";
 
+
 html{
   scroll-behavior: smooth;
 }
@@ -125,7 +126,7 @@ body {
   padding: 27px 132px;
 
  &__cards {
-   gap: 20px;
+   gap: 64px;
    row-gap: 60px;
  }
    &__title {
@@ -165,8 +166,8 @@ body {
 
       }
       &__image {
-        width: 70%;
-        height: 315px;
+        width: 69%;
+        height: 219px;
         margin: 0 auto;
 
         & img {

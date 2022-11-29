@@ -1,16 +1,11 @@
-@media only screen and (max-height: 1081px) {
-  .future {
-    height: 80vh;
-  }
-}
-@media only screen and (max-height: 1000px) {
-  .future {
-    height: 85vh;
-  }
-}
 @media only screen and (max-height: 950px) {
+  .project {
+    height: 150vh;
+  }
+}
+@media only screen and (max-height: 800px) {
   .future {
-    height: 100vh;
+    height: 110vh;
   }
 }
 @media (max-width: 2200px) {
@@ -243,9 +238,6 @@
   }
 }
 @media (max-width: 950px) {
-  .future {
-    height: 88vh;
-  }
   .future__hands {
     bottom: -120px;
   }
@@ -266,6 +258,9 @@
   }
 }
 @media (max-width: 900px) {
+  .future {
+    height: 110vh;
+  }
   .goals__steps .step__two {
     margin-left: 0;
   }
@@ -318,7 +313,6 @@
 }
 @media (max-width: 850px) {
   .future {
-    height: 95vh;
     padding-top: 40px;
   }
   .future__hands {
@@ -392,6 +386,10 @@
   }
 }
 @media (max-width: 800px) {
+  .future__hands {
+    bottom: -120px;
+    right: -35px;
+  }
   .people__grid {
     grid-template-columns: 1fr;
   }
@@ -461,7 +459,7 @@
     width: 96%;
   }
   .project__funding .funding__test {
-    width: 100%;
+    width: 72%;
     margin: 0 auto;
   }
   .project__funding .funding__test2 {
@@ -474,7 +472,7 @@
     padding: 10px 0;
   }
   .project__management .management__test {
-    width: 72%;
+    width: 69%;
     margin: 0 auto;
   }
   .project__management .management__test .project__desktop {
@@ -487,10 +485,7 @@
   .project__management .management__test .management__office {
     background-color: #fbcf3a;
     border-radius: 15px;
-  }
-  .project__management .press {
-    width: 95% !important;
-    margin-left: 0;
+    margin: 45px auto 0;
   }
   .project__execution {
     background-color: #137dc5;
@@ -501,7 +496,7 @@
     margin-bottom: 10px;
   }
   .project__execution .execution__test {
-    width: 67%;
+    width: 69%;
     margin: 0 auto;
   }
   .project__execution .execution__test .project__desktop {
@@ -510,16 +505,9 @@
   .project__execution .execution__test .project__mobile {
     display: block;
   }
-  .project__execution .execution__test .press {
-    margin-left: 0 !important;
-  }
   .project .box {
-    width: 137%;
-    left: -17%;
-  }
-  .project .box.box3 {
-    bottom: -239%;
-    left: -19%;
+    width: 106%;
+    left: -3%;
   }
   .project__bottom {
     align-items: center;
@@ -543,9 +531,6 @@
   }
 }
 @media (max-width: 750px) {
-  .future {
-    height: 100vh;
-  }
   .future__hands {
     bottom: -94px;
   }
@@ -574,6 +559,9 @@
   }
 }
 @media (max-width: 700px) {
+  .future {
+    height: 120vh;
+  }
   .header {
     position: relative;
   }
@@ -629,9 +617,6 @@
   .demo {
     padding: 0 10px;
   }
-  .future {
-    height: 110vh;
-  }
   .future__hands {
     display: none;
     bottom: -94px;
@@ -652,9 +637,6 @@
   }
 }
 @media (max-width: 600px) {
-  .future {
-    height: 115vh;
-  }
   .goals__steps .step__desc {
     font-size: 17px;
   }
@@ -707,9 +689,6 @@
   .demo__loc {
     top: 48px;
     left: 219px;
-  }
-  .project__funding .funding__test {
-    width: 85%;
   }
   .bottom__cols {
     margin-top: 20px;
