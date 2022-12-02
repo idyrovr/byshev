@@ -582,7 +582,7 @@ body {
   margin-top: 23px;
   position: relative;
   background-image: url("../images/bigMap.png");
-  height: 657px;
+  height: 620px;
   width: 100%;
 }
 .demo::before {

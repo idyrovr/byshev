@@ -8,6 +8,34 @@
     height: 110vh;
   }
 }
+@media only screen and (max-height: 750px) {
+  .future {
+    height: 128vh;
+  }
+}
+@media (max-height: 650px) {
+  .future {
+    height: 143vh;
+  }
+}
+@media (max-height: 500px) {
+  .future {
+    height: 224vh;
+  }
+  .project {
+    height: 256vh;
+  }
+}
+@media (max-height: 400px) {
+  .future {
+    height: 272vh;
+  }
+}
+@media (max-height: 300px) {
+  .future {
+    height: 409vh;
+  }
+}
 @media (max-width: 2200px) {
   .future__hands {
     bottom: -226px;
@@ -258,9 +286,6 @@
   }
 }
 @media (max-width: 900px) {
-  .future {
-    height: 110vh;
-  }
   .goals__steps .step__two {
     margin-left: 0;
   }
@@ -276,7 +301,7 @@
   }
   .goals__steps .step__two .step__number::after {
     height: 16px;
-    top: 66.5%;
+    top: 64.9%;
   }
   .goals__steps .step__three .step__number::after {
     height: 14px;
@@ -534,6 +559,9 @@
   .future__hands {
     bottom: -94px;
   }
+  .demo {
+    height: 500px;
+  }
   .demo__ukr {
     max-width: 630px;
   }
@@ -559,9 +587,6 @@
   }
 }
 @media (max-width: 700px) {
-  .future {
-    height: 120vh;
-  }
   .header {
     position: relative;
   }
@@ -736,7 +761,13 @@
     font-size: 14px;
   }
   .future {
-    height: 133vh;
+    height: 169vh;
+  }
+  .future__title {
+    max-width: 310px;
+  }
+  .future__left::after {
+    top: 158px;
   }
   .goals__steps .step__number::after {
     width: 245px;
@@ -787,6 +818,56 @@
   }
   .footer__title {
     font-size: 25px;
+  }
+}
+@media (max-width: 350px) {
+  .header__link:not(:last-child) {
+    margin-right: 26px;
+  }
+  .header__link:not(:last-child)::after {
+    right: -27px;
+  }
+  .header__link {
+    font-size: 13px;
+  }
+  .future {
+    height: 213vh;
+  }
+  .future__title {
+    max-width: 183px;
+  }
+  .fundraising__live {
+    width: 249px;
+  }
+  .concept__sm-title {
+    font-size: 22px;
+  }
+  .demo {
+    height: 360px;
+  }
+  .goals__steps .step__number::after {
+    display: none;
+  }
+  .goals__steps .step__number {
+    font-size: 67px;
+  }
+  .goals__steps .step__desc {
+    line-height: 100.02%;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .concept__div {
+    width: 199px;
+  }
+  .footer__title {
+    width: 270px;
+    font-size: 22px;
+  }
+  .project {
+    padding: 27px 16px;
+  }
+  .project__sm-title {
+    font-size: 18px;
   }
 }
 
