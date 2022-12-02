@@ -124,7 +124,7 @@ body {
   padding: 27px 132px;
 }
 .personnel__cards {
-  gap: 20px;
+  gap: 64px;
   row-gap: 60px;
 }
 .personnel__title {
@@ -162,8 +162,8 @@ body {
   margin-top: 10px;
 }
 .personnel__card .card__image {
-  width: 70%;
-  height: 315px;
+  width: 72%;
+  height: 45%;
   margin: 0 auto;
 }
 .personnel__card .card__image img {

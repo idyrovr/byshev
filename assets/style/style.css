@@ -118,9 +118,9 @@ body {
 }
 
 .future {
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: hidden;
-  height: 100vh;
   padding-top: 40px;
   position: relative;
   background: url("../images/earth.jpg") no-repeat center/cover;
@@ -160,8 +160,8 @@ body {
   border: 2px solid #FFFFFF;
   transform: rotate(-90deg);
   background-color: #FFFFFF;
-  top: 157px;
-  right: -176px;
+  top: 51%;
+  right: -58%;
 }
 .future__title {
   font-family: "../fonts/Montserrat", sans-serif;
@@ -434,7 +434,7 @@ body {
   background: linear-gradient(to right, #137DC5, #FFF);
   width: 788px;
   right: -776px;
-  top: 120px;
+  top: 65.2%;
   height: 18px;
 }
 .goals__steps .step__three .step__number::after {
@@ -582,7 +582,7 @@ body {
   margin-top: 23px;
   position: relative;
   background-image: url("../images/bigMap.png");
-  height: 657px;
+  height: 620px;
   width: 100%;
 }
 .demo::before {
@@ -634,8 +634,7 @@ body {
   overflow-x: hidden;
   margin-top: 43px;
   background-image: url("../images/My_test.jpg");
-  height: auto;
-  padding: 27px 132px;
+  height: 100vh;
 }
 .project a {
   text-decoration: underline;
@@ -657,25 +656,25 @@ body {
   position: absolute;
   width: 107px;
   height: 5px;
-  top: 20px;
+  top: 22px;
   left: -100px;
   background: #153149;
 }
 .project .grid__col-3 {
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .project__parts {
-  margin-top: 87px;
+  margin-top: 42px;
   width: 100%;
   gap: 20px;
 }
 .project .box {
-  width: 158%;
+  width: 105%;
   display: none;
   background: #719DC1;
   box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.15);
   border-radius: 3px;
-  left: -31%;
+  left: -3%;
   top: 77%;
   position: absolute;
   z-index: 6;
@@ -708,7 +707,7 @@ body {
 }
 .project .press {
   display: inline-block;
-  width: 99%;
+  width: 100%;
   height: 38px;
   background: #FFFFFF;
   border-radius: 3px;
@@ -717,7 +716,7 @@ body {
   line-height: 137.02%;
   color: #565656;
   text-align: center;
-  margin-bottom: 15px;
+  margin: 0 auto 15px;
   padding: 8px 0;
 }
 .project .show-box1 {
@@ -739,90 +738,26 @@ body {
   color: #FFFFFF;
 }
 .project__sm-title {
-  width: 95%;
+  width: 100%;
   height: 61px;
   border: 3px solid #137DC5;
   border-radius: 3px;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 137.02%;
   color: #004988;
   text-align: center;
   padding: 12px 0;
-  margin-right: 40px;
-}
-.project__funding .project__sm-title {
-  width: 89%;
-  margin-right: 69px;
-}
-.project__management .project__sm-title {
   margin-bottom: 28px;
 }
-.project__management .press_blue-management {
-  background: #719DC1 !important;
-  box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.2);
-  color: #FFFFFF !important;
-}
-.project__management .press {
-  width: 95%;
-  margin-bottom: 25px !important;
-  text-align: center;
-}
-.project__management .management__test {
-  width: 94%;
-  text-align: center;
-}
-.project__management .management__test .project__mobile {
-  display: none;
-}
-.project__management .management__office {
-  width: 96%;
-  border-radius: 5px;
+.project .funding__test {
   border: 2px solid #137DC5;
-  text-align: center;
+  border-radius: 5px;
+  width: 95%;
   margin: 0 auto;
-}
-.project__management .management__office .office__title {
-  width: 100%;
-  border-radius: 3px;
-  font-weight: 600;
-  font-size: 16px;
-  color: #004988;
-  text-align: center;
-  padding: 12px 0;
-  margin-bottom: 5px;
-}
-.project__management .management__office .show-box1 .press {
-  position: relative;
-}
-.project__management .management__office .show-box1 .press::after {
-  content: "";
-  position: absolute;
-  width: 60%;
-  height: 1px;
-  background-color: #FFFFFF;
-  top: 26px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-.project__execution .project__sm-title {
-  margin-bottom: 96px;
-}
-.project__execution .press_execution {
-  width: 81%;
-  height: 70px !important;
-  margin-left: 16px !important;
-  margin-right: 0 !important;
-}
-.project__execution .project__mobile {
-  display: none;
-}
-.project .funding {
-  gap: 61px;
+  padding: 15px 10px 0;
 }
 .project .funding__left {
-  margin-top: 28px;
   position: relative;
 }
 .project .funding__left .svg1 {
@@ -861,10 +796,12 @@ body {
   z-index: 5;
 }
 .project .funding__foundation {
-  width: 75%;
+  width: 95%;
   border-radius: 5px;
   padding: 2.5%;
   border: 2px solid #137DC5;
+  margin: 0 auto;
+  height: 164px;
 }
 .project .funding__foundation .foundation__title {
   width: 100%;
@@ -888,6 +825,59 @@ body {
   left: 0;
   right: 0;
   margin: 0 auto;
+}
+.project__management .press_blue-management {
+  background: #719DC1 !important;
+  box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.2);
+  color: #FFFFFF !important;
+}
+.project__management .management__test {
+  width: 95%;
+  text-align: center;
+  margin: 0 auto;
+}
+.project__management .management__test .project__mobile {
+  display: none;
+}
+.project__management .management__office {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #137DC5;
+  text-align: center;
+  padding: 0 10px;
+  margin: 272px auto 0;
+  height: 164px;
+}
+.project__management .management__office .office__title {
+  width: 100%;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #004988;
+  text-align: center;
+  padding: 12px 0;
+  margin-bottom: 5px;
+}
+.project__management .management__office .show-box1 .press {
+  position: relative;
+}
+.project__management .management__office .show-box1 .press::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 1px;
+  background-color: #FFFFFF;
+  top: 26px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.project__execution .execution__test {
+  width: 95%;
+  margin: 0 auto;
+}
+.project__execution .project__mobile {
+  display: none;
 }
 .project__bottom {
   margin-top: 80px;
@@ -977,6 +967,22 @@ body {
 .footer__bottom {
   text-align: center;
   padding: 41px 0 38px;
+}
+.footer__social {
+  margin-top: 20px;
+}
+.footer__icon {
+  margin-right: 10px;
+  font-size: 25px;
+}
+.footer__icon .fa-facebook-square {
+  color: #335BF5;
+}
+.footer__icon .fa-instagram {
+  color: #E61F5A;
+}
+.footer__icon .fa-whatsapp {
+  color: #25D366;
 }
 
 .svg5 {
