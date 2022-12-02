@@ -1,9 +1,3 @@
-@media (max-width: 1100px) {
-  .personnel__card .card__image {
-    width: 69%;
-    height: 154px;
-  }
-}
 @media (max-width: 1000px) {
   .personnel__card .card__title {
     font-size: 15px;
@@ -11,13 +5,16 @@
   .personnel__card .card__desc {
     font-size: 14px;
   }
-}
-@media (max-width: 900px) {
   .grid__col-3 {
     grid-template-columns: 1fr 1fr;
   }
   .personnel {
-    padding: 27px 20px;
+    padding: 27px 95px;
+  }
+  .personnel__card .card__image {
+    width: 65%;
+    height: 64%;
+    margin: 0 auto;
   }
 }
 

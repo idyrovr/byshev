@@ -1,3 +1,9 @@
+@media (min-height: 1100px) {
+  .future {
+    height: 80vh;
+  }
+}
+
 @media only screen and (max-height: 1081px) {
 
 }
@@ -32,6 +38,14 @@
     height: 143vh;
   }
 }
+@media (max-height: 550px) {
+  .future {
+    height: 183vh;
+  }
+  .future__hands {
+    right: -44px;
+  }
+}
 @media (max-height: 500px) {
   .future {
     height: 224vh;
@@ -55,7 +69,7 @@
 @media (max-width: 2200px) {
   .future {
   }
-.future__hands {
+  .future__hands {
   bottom: -226px;
   right: -10px;
 }
@@ -67,8 +81,8 @@
     }
   }
   .goals__steps .step__two .step__number::after {
-    top: 118px;
-    height: 19px;
+    top: 65.9%;
+    height: 18px;
   }
 }
 @media (max-width: 1980px){
@@ -104,8 +118,7 @@
     right: -10px;
   }
   .goals__steps .step__two .step__number::after {
-    top: 120px;
-    height: 17px;
+    top: 65.5%;
   }
 }
 @media (max-width: 1440px){
@@ -161,9 +174,7 @@
       }
     }
   }
-  .goals__steps .step__two .step__number::after {
-    top: 121px;
-  }
+
 }
 @media (max-width: 1200px) {
   .future__hands {
@@ -209,9 +220,7 @@
       font-size: 19px;
     }
   }
-  .goals__steps .step__two .step__number::after {
-    top: 121px;
-  }
+
 
 }
 @media (max-width: 1150px){
@@ -339,7 +348,7 @@
   .goals__steps .step__two .step__number::after {
     width: 550px;
     right: -538px;
-    top: 120px;
+
   }
   .goals__steps .step__three .step__number::after {
     right: -568px;
@@ -882,7 +891,7 @@
     font-size: 14px;
   }
   .future {
-    height: 169vh;
+    height: 140vh;
     &__title {
       max-width: 310px;
     }
@@ -950,7 +959,15 @@
     }
   }
 }
+@media (max-width: 400px) {
+  .future {
+    height: 168vh;
+  }
+}
 @media (max-width: 350px) {
+  .future__left {
+    margin-bottom: 26px;
+  }
   .header__link:not(:last-child) {
     margin-right: 26px;
   }
@@ -962,7 +979,7 @@
     font-size: 13px;
   }
   .future {
-    height: 213vh;
+    height: 215vh;
   }
   .future__title {
     max-width: 183px;
@@ -976,6 +993,12 @@
   }
   .demo {
     height: 360px;
+  }
+  .demo__loc {
+    top: 9px;
+    left: 109px;
+    width: 34px;
+    height: 66px;
   }
   .goals__steps .step__number::after {
     display: none;
