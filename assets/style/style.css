@@ -189,6 +189,15 @@ body {
 .future__desc .byshevSpan {
   color: #FACF39;
   font-size: 20px;
+  text-decoration: underline;
+}
+.future__desc .byshevBlue {
+  color: #137DC5;
+}
+.future__desc .yasnogorodka {
+  text-decoration: underline;
+  color: #FACF39;
+  font-size: 20px;
 }
 .future__timeline {
   font-family: "../fonts/Inter", sans-serif;
@@ -300,9 +309,9 @@ body {
 .fundraising__live::before {
   content: "";
   position: absolute;
-  top: 1px;
-  left: 2px;
-  height: 83%;
+  top: 0;
+  left: 0;
+  height: 95%;
   width: 10%;
   background-color: #153149;
   border-radius: 10px;
