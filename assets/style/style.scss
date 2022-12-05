@@ -197,6 +197,15 @@ body {
     & .byshevSpan {
       color: #FACF39;
       font-size: 20px;
+      text-decoration: underline;
+    }
+    & .byshevBlue {
+      color: #137DC5;
+    }
+    & .yasnogorodka {
+      text-decoration: underline;
+      color: #FACF39;
+      font-size: 20px;
     }
     &:hover .byshevSpan {
 
@@ -290,7 +299,6 @@ body {
       height: 100%;
     }
   }
-
 }
 
 .fundraising {
@@ -322,9 +330,9 @@ body {
     &::before {
       content: "";
       position: absolute;
-      top: 1px;
-      left: 2px;
-      height: 83%;
+      top: 0;
+      left: 0;
+      height: 95%;
       width: 10%;
       background-color: #153149;
       border-radius: 10px;

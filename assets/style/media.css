@@ -12,6 +12,9 @@
   .future {
     height: 110vh;
   }
+  .project {
+    height: 180vh;
+  }
 }
 @media only screen and (max-height: 750px) {
   .future {
